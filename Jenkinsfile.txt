@@ -1,0 +1,45 @@
+pipeline {
+   
+ agent any
+  
+  stages {
+	
+   stage('Example') {
+           
+	 steps {
+ 
+        	echo 'Hello World'
+            
+		echo 'This is Suresh.'
+        
+	    	echo 'This is my first Jenkins programe'
+   
+               }
+    
+                  }
+  
+  stage('Copy') {
+  
+          steps{
+  
+              echo 'This is copy the code from GIT'
+    
+        }
+  
+  }
+   
+ stage('Build'){
+    
+    steps{
+         
+   echo 'This is to build the code'
+    
+    }
+    }
+            }
+    }
+   
+         
+
+
+
